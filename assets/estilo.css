@@ -173,12 +173,12 @@ a.card:hover{translate:0 -3px;border-color:var(--line-2);background:var(--card-2
 .onda{fill:none;stroke:var(--fg);stroke-width:1;vector-effect:non-scaling-stroke;transform-box:fill-box;transform-origin:center;animation:onda 2s ease-out infinite}
 @keyframes onda{from{transform:scale(1);opacity:.8}to{transform:scale(3.4);opacity:0}}
 .tres{gap:0}
-.tres .card,.inv .card{background:none;border:0;border-radius:var(--r-lg);box-shadow:none;overflow:hidden;transition:translate .4s cubic-bezier(.22,.61,.36,1),background-color .4s}
+.tres .card,.inv .card{background:none;border:0;border-radius:0;box-shadow:none;overflow:visible;transition:translate .4s cubic-bezier(.22,.61,.36,1)}
 .tres .card{padding:28px 32px 34px}
 .tres .card+.card,.inv .card+.card{border-left:1px solid var(--line)}
-.tres .card:hover,.tres a.card:hover,.inv a.card:hover{translate:0 -8px;background:rgba(255,255,255,.035);border-color:var(--line)}
+.tres .card:hover,.tres a.card:hover,.inv a.card:hover{translate:0 -8px;background:radial-gradient(75% 65% at 50% 40%,rgba(255,255,255,.05),transparent 72%);border-color:var(--line)}
 .tres .spot::after,.inv .spot::after{display:none}
-.tres .spot::before,.inv .spot::before{background:radial-gradient(420px circle at var(--mx,50%) var(--my,-30%),rgba(255,255,255,.09),transparent 55%)}
+.tres .spot::before,.inv .spot::before{border-radius:0;background:radial-gradient(420px circle at var(--mx,50%) var(--my,-30%),rgba(255,255,255,.08),transparent 55%);-webkit-mask-image:radial-gradient(closest-side,#000 55%,transparent);mask-image:radial-gradient(closest-side,#000 55%,transparent)}
 .tres .enlace{cursor:pointer}
 .tres .enlace .ics-serie{cursor:default}
 .tres .enlace .bars{cursor:pointer}
