@@ -149,7 +149,7 @@ a.card:hover{translate:0 -3px;border-color:var(--line-2);background:var(--card-2
 .ind .punto{background:var(--c)}
 .ind .nodo{border-color:var(--c)}
 .ind .nodo.activo{background:var(--c)}
-.ind .insignia{color:var(--c);border-color:color-mix(in oklab,var(--c) 38%,transparent);box-shadow:inset 0 1px 0 var(--edge),0 0 0 7px color-mix(in oklab,var(--c) 7%,transparent),0 0 26px color-mix(in oklab,var(--c) 14%,transparent)}
+.ind .insignia{color:var(--c)}
 .ind .bars i.on{background:color-mix(in oklab,var(--c) 62%,transparent)}
 .ind .bars i:hover,.ind .bars i.sel{background:var(--c)}
 .ind .p90{fill:var(--c);opacity:.45}
