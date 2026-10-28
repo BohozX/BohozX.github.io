@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Daniel Bohoz Oros Trujillo</title>
+<meta name="description" content="Indicators and research on the Bolivian economy.">
+<meta property="og:title" content="Daniel Bohoz Oros Trujillo">
+<meta property="og:description" content="Indicators and research on the Bolivian economy.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://bohozx.github.io/">
+<meta name="theme-color" content="#000000">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='24' height='24' rx='5' fill='%23000'/%3E%3Cpath d='M12 4.5 18.5 8.2 12 12 5.5 8.2z' fill='%23fff'/%3E%3Cpath d='M5.5 8.2V15.8L12 19.5V12zM18.5 8.2V15.8L12 19.5V12z' fill='none' stroke='%23fff' stroke-width='1.3' stroke-linejoin='round'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Geist+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="assets/estilo.css?v=9">
+<script>(function(){var d=document.documentElement;d.classList.add('js');var q=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;if(!q){d.classList.add('intro');if('scrollRestoration' in history)history.scrollRestoration='manual';setTimeout(function(){d.classList.remove('intro')},15000)}})()</script>
+</head>
+<body>
+<div class="velo" id="velo" aria-hidden="true"></div>
+
+<header class="nav">
+  <div class="wrap nav-in">
+    <a class="brand" href="#inicio" aria-label="Home" data-i18n-aria="nav_inicio">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.8 20 7.4 12 12 4 7.4z" fill="currentColor"/><path d="M4 7.4v9.2l8 4.6V12zM20 7.4v9.2l-8 4.6V12z" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/></svg>
+      <span>Daniel Oros</span>
+    </a>
+    <nav class="nav-links" aria-label="Sections" data-i18n-aria="nav_secciones">
+      <a href="#indicadores" data-i18n="nav_indicadores">Indicators</a>
+      <a href="#investigacion" data-i18n="nav_investigacion">Research</a>
+      <a href="#experiencia" data-i18n="nav_experiencia">Experience</a>
+    </nav>
+    <div class="idioma" id="idioma" role="group" aria-label="Language" data-i18n-aria="idioma">
+      <button type="button" data-l="en" aria-pressed="true">EN</button>
+      <button type="button" data-l="es" aria-pressed="false">ES</button>
+    </div>
+    <a class="btn btn-sm btn-light" href="#contacto" data-i18n="nav_contacto">Contact</a>
+  </div>
+</header>
+
+<main>
+  <section class="hero" id="inicio">
+    <div class="hero-bg" aria-hidden="true"></div>
+    <div class="wrap hero-in">
+      <div class="hero-cube" id="ranura">
+        <div class="cubo-caja" id="cubo-caja">
+          <canvas id="cubo" tabindex="0" role="img" aria-label="Grayscale Rubik’s cube that solves itself. Drag it or use the arrow keys to rotate it; click, Enter or space scrambles it." data-i18n-aria="cubo"></canvas>
+        </div>
+      </div>
+      <div class="hero-copy">
+        <h1 class="grad rv" data-i18n="h1">Data and research on the Bolivian economy.</h1>
+        <p class="sub rv" style="--d:.1s" data-i18n-html="sub">I’m <strong>Daniel Bohoz Oros Trujillo</strong>, an economist with a particular interest in data analysis, building indicators and econometric modeling. On this page you’ll find some of the indicators I’ve developed and the research I’ve carried out.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="indicadores">
+    <div class="wrap">
+      <div class="sec-head rv">
+        <p class="kicker" data-i18n="ind_kicker">Indicators</p>
+        <h2 class="grad" data-i18n="ind_titulo">Data Observatory.</h2>
+      </div>
+
+      <div class="tres">
+        <a class="card spot ind rv cargando" data-ind="ipcaf" href="https://bohozx.github.io/IPCAF/">
+          <span class="live" aria-label="Live" data-i18n-aria="en_vivo"></span>
+          <span class="insignia" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 4.5h2.2l2.3 10a1.2 1.2 0 0 0 1.2.9h8.6a1.2 1.2 0 0 0 1.2-.9L20.2 8H6.1"/><circle cx="9.3" cy="19.2" r="1.3"/><circle cx="16.8" cy="19.2" r="1.3"/></svg></span>
+          <p class="seccion" data-i18n="sec_precios">Prices and inflation</p>
+          <h3>IPCAF</h3>
+          <div class="metric">
+            <span class="m-val" data-v>Loading</span>
+            <span class="m-lab" data-i18n="ipcaf_lab">Month-to-date change · three cities</span>
+            <span class="m-date" data-d></span>
+          </div>
+          <div class="chart" data-chart></div>
+          <span class="card-go"><span data-i18n="abrir">Open dashboard</span> <span class="arr" aria-hidden="true">→</span></span>
+        </a>
+
+        <a class="card spot ind rv cargando" style="--d:.08s" data-ind="p2p" href="https://bohozx.github.io/P2P-Nowscast/">
+          <span class="live" aria-label="Live" data-i18n-aria="en_vivo"></span>
+          <span class="insignia" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.6"/><path d="M14.9 9.3c-.5-1-1.6-1.7-2.9-1.7-1.6 0-2.8.9-2.8 2.1 0 2.9 5.8 1.6 5.8 4.5 0 1.3-1.3 2.2-3 2.2-1.4 0-2.6-.7-3.1-1.8M12 5.9v1.7M12 16.4v1.7"/></svg></span>
+          <p class="seccion" data-i18n="sec_cambio">Foreign exchange market</p>
+          <h3 data-i18n="p2p_titulo">Parallel exchange rate</h3>
+          <div class="metric">
+            <span class="m-val" data-v>Loading</span>
+            <span class="m-lab" data-i18n="p2p_lab">USDT buy price · last 30 days</span>
+            <span class="m-date" data-d></span>
+          </div>
+          <div class="chart" data-chart></div>
+          <span class="card-go"><span data-i18n="abrir">Open dashboard</span> <span class="arr" aria-hidden="true">→</span></span>
+        </a>
+
+        <div class="card spot ind rv cargando" style="--d:.16s" data-ind="ics">
+          <span class="live" aria-label="Live" data-i18n-aria="en_vivo"></span>
+          <span class="insignia" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="2.8" y="7.6" width="18.4" height="5.2" rx="1"/><path d="M7.2 7.6 4 12.8M12.2 7.6 9 12.8M17.2 7.6 14 12.8M21.2 8.4 18.8 12.8M6 12.8v6.4M18 12.8v6.4M4.4 19.2h3.2M16.4 19.2h3.2"/></svg></span>
+          <p class="seccion" data-i18n="sec_entorno">Sociopolitical environment</p>
+          <h3 data-i18n="ics_titulo">Social conflict</h3>
+          <div class="metric">
+            <span class="m-val" data-v>Loading</span>
+            <span class="m-lab" data-i18n="ics_lab">Blocked road points</span>
+          </div>
+          <figure class="mapa" data-mapa></figure>
+          <div class="ics-serie">
+            <p class="lectura" data-lectura></p>
+            <div class="bars" data-bars></div>
+            <div class="chart-eje"><span data-desde></span><span data-hasta></span></div>
+          </div>
+          <a class="card-go" href="https://bohozx.github.io/Indicador-de-Conflictos-Sociales/"><span data-i18n="abrir">Open dashboard</span> <span class="arr" aria-hidden="true">→</span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="investigacion">
+    <div class="wrap">
+      <div class="sec-head rv">
+        <p class="kicker" data-i18n="inv_kicker">Research</p>
+        <h2 class="grad" data-i18n="inv_titulo">My research.</h2>
+      </div>
+
+      <div class="inv">
+        <a class="card spot big rv" href="https://ideas.repec.org/p/pra/mprapa/130426.html">
+          <p class="estado" data-i18n="paper_estado">Working paper · 2026</p>
+          <h3 data-i18n="paper_titulo">USDT Price Dynamics in Bolivia amid Episodes of Domestic Uncertainty, 2023–2026</h3>
+          <p class="resumen" data-i18n="paper_resumen">Examines whether the effect of exchange-rate uncertainty and social conflict on the USDT price changed between July 2023 and June 2026. Using daily data and TVP-SV and eGARCH models estimated over rolling windows, it finds that conflict initially pushed the USDT price up, but that from June 2025 the relationship weakened and then reversed.</p>
+          <span class="card-go"><span data-i18n="ver_doc">View document</span> <span class="arr" aria-hidden="true">→</span></span>
+        </a>
+
+        <a class="card spot big rv" style="--d:.08s" href="https://repositorio.umsa.bo/handle/123456789/46075">
+          <p class="estado" data-i18n="tesis_estado">Undergraduate thesis · 2026</p>
+          <h3 data-i18n="tesis_titulo">Optimal Monetary Policy in the Face of External Imbalances in Bolivia, 2011-2025</h3>
+          <p class="resumen" data-i18n="tesis_resumen">Assesses which monetary policy would have best addressed Bolivia’s external imbalances between 2011 and 2025. Using a DSGE model estimated with Bayesian techniques, it compares monetary and exchange-rate regimes under external shocks and concludes that a hybrid regime of inflation targeting with a managed float performs best.</p>
+          <span class="card-go"><span data-i18n="ver_doc">View document</span> <span class="arr" aria-hidden="true">→</span></span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="experiencia">
+    <div class="wrap">
+      <div class="sec-head rv">
+        <p class="kicker" data-i18n="exp_kicker">Experience</p>
+        <h2 class="grad" data-i18n="exp_titulo">My professional experience.</h2>
+      </div>
+
+      <ol class="log">
+        <li class="ahora rv">
+          <div class="log-body">
+            <h3 data-i18n="exp_fonplata">Vice Presidency of Strategic Development - Strategy and Development Effectiveness Area (i)</h3>
+            <p class="org" data-i18n="org_fonplata">FONPLATA Development Bank</p>
+          </div>
+        </li>
+        <li class="rv">
+          <div class="log-body">
+            <h3 data-i18n="exp_analista">Economic and Virtual Asset Research Analyst</h3>
+            <p class="org">Blockfinity Advisors</p>
+          </div>
+        </li>
+        <li class="rv">
+          <div class="log-body">
+            <h3 data-i18n="exp_asistente">Blockchain and Digital Asset Research Assistant</h3>
+            <p class="org">Blockfinity Advisors</p>
+          </div>
+        </li>
+        <li class="rv">
+          <div class="log-body">
+            <h3 data-i18n="exp_bcb">Economic Policy Advisory Office - Central Banking Analysis and Development Department (i)</h3>
+            <p class="org" data-i18n="org_bcb">Central Bank of Bolivia</p>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="sec contacto" id="contacto">
+    <div class="wrap">
+      <div class="sec-head rv">
+        <p class="kicker" data-i18n="con_kicker">Contact</p>
+        <h2 class="grad" data-i18n="con_titulo">Let’s talk.</h2>
+        <p class="lead" data-i18n="con_lead">Have a research idea or an indicator you’d like to build? I’d love to help. You can also reach out to use any of this data or for consulting.</p>
+      </div>
+      <div class="correo rv">
+        <a id="correo" href="mailto:daniel.bohoz.oros.t@gmail.com">daniel.bohoz.oros.t@gmail.com</a>
+        <button class="btn btn-sm btn-light" id="copiar" type="button" data-i18n="copiar">Copy</button>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="pie">
+  <div class="wrap pie-in">
+    <span>Daniel Bohoz Oros Trujillo</span>
+    <a href="https://www.linkedin.com/in/daniel-bohoz-oros-trujillo-79b225374"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zm1.78 13.02H3.56V9h3.56v11.45zM22.23 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg><span>LinkedIn</span></a>
+    <a href="https://github.com/BohozX"><svg viewBox="0 0 16 16" aria-hidden="true"><path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg><span>GitHub</span></a>
+    <a href="https://ideas.repec.org/f/por278.html"><svg viewBox="0 0 16 16" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" d="M3.5 1.5h6l3 3v10h-9zM9.5 1.5v3h3M5.8 8h4.4M5.8 10.6h4.4"/></svg><span>RePEc</span></a>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="assets/cubo.js?v=3"></script>
+<script src="assets/idioma.js?v=13"></script>
+<script src="assets/app.js?v=5"></script>
+</body>
+</html>
