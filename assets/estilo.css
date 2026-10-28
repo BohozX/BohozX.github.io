@@ -178,6 +178,10 @@ a.card:hover{translate:0 -3px;border-color:var(--line-2);background:var(--card-2
 .tres .card+.card,.inv .card+.card{border-left:1px solid var(--line)}
 .tres .card:hover,.tres a.card:hover,.inv a.card:hover{translate:0 -8px;background:none;border-color:var(--line)}
 .tres .spot::before,.tres .spot::after,.inv .spot::before,.inv .spot::after{display:none}
+.tres .card h3,.tres .card .m-val,.tres .card .card-go{transition:color .3s}
+.tres .card .live{transition:background-color .3s}
+.tres .card:hover h3,.tres .card:hover .m-val,.tres .card:hover .card-go{color:var(--c)}
+.tres .card:hover .live{background:var(--c)}
 .tres .enlace{cursor:pointer}
 .tres .enlace .ics-serie{cursor:default}
 .tres .enlace .bars{cursor:pointer}
