@@ -65,6 +65,13 @@
     el.style.setProperty('--my', `${e.clientY - r.top}px`);
   }));
 
+  $$('.ind:not(a)').forEach(el => {
+    const ir = $('.card-go', el);
+    if (!ir) return;
+    el.classList.add('enlace');
+    el.addEventListener('click', e => { if (!e.target.closest('.ics-serie, a')) location.href = ir.href; });
+  });
+
   const copiar = $('#copiar');
   if (copiar) copiar.addEventListener('click', async () => {
     const texto = $('#correo').textContent.trim();
