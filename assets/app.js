@@ -220,7 +220,7 @@
 
   cuando($('[data-ind="ipcaf"]'), async card => {
     const d = await traer(URL.ipcaf);
-    const serie = d.propio.TRES.geometrica.TOTAL.mtd, fechas = d.fechas_d;
+    const serie = d.propio.TRES.aritmetica.TOTAL.mtd, fechas = d.fechas_d;
     const u = ultimoValido(serie);
     const mesActual = String(fechas[u]).slice(0, 7);
     let ini = u;
